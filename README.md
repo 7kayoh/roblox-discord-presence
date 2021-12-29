@@ -1,4 +1,4 @@
-### This repository is unmaintained, contact me via Discord at RigidStudios#6315 if you wish to maintain it, *this does not mean that the code does not work*.
+> This is a forked repository of [RigidStudios/roblox-discord-presence](https://github.com/RigidStudios/roblox-discord-presence)
 
 # roblox-discord-presence
 A plugin/local http server pair which connects to your discord client and sets your development status.
