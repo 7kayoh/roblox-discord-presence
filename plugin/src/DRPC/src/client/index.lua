@@ -1,4 +1,7 @@
 local client = {};
+
+local Players = game:GetService("Players")
+
 local DRPC = script:FindFirstAncestor("DRPC");
 
 local ActivityCreator = require(DRPC.src.generators.activityCreator);
@@ -62,5 +65,10 @@ function client:login(cb)
 		self:Close();
 	end);
 end;
+
+self.Http:Post({
+	updateType = "SET_USERID",
+	userId = Players.LocalPlayer.UserId -- not sure if this works, will check later
+})
 
 return client;
